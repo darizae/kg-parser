@@ -92,9 +92,8 @@ class OpenAIKGModel(BaseKGModel):
     """
     def __init__(self, config: ModelConfig):
         super().__init__(config)
-        self.client = openai.OpenAI(
-            api_key=config.api_key or os.getenv("OPENAI_API_KEY")
-        )
+        openai_api_key = config.api_key or os.getenv("OPENAI_API_KEY")
+        self.client = openai.OpenAI(api_key=openai_api_key)
         if not self.client.api_key:
             raise ValueError("OpenAI API key not found in config or environment variables.")
 

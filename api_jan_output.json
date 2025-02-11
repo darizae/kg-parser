@@ -1,0 +1,49 @@
+[
+  {
+    "id": "5d5b0ecd-521b-4767-87c6-daea4f450dfd",
+    "source_text": "Mount Everest is the highest mountain in the world. It's located in Nepal.",
+    "triples": [
+      {
+        "subject": "Mount Everest",
+        "predicate": "is the highest mountain in the world",
+        "object": "located in"
+      },
+      {
+        "subject": "The Walt Disney Company",
+        "predicate": "headquartered at",
+        "object": "Walt Disney Studios complex in Burbank, California"
+      },
+      {
+        "subject": "The Walt Disney Company",
+        "predicate": "commonly known as",
+        "object": "Disney"
+      },
+      {
+        "subject": "The Walt Disney Company",
+        "predicate": "instance of",
+        "object": "American multinational mass media and entertainment conglomerate"
+      }
+    ]
+  },
+  {
+    "id": "62cb388b-8df1-45e0-a02b-596df8a97888",
+    "source_text": "Marie Curie discovered radium and won Nobel Prizes in Physics and Chemistry.",
+    "triples": [
+      {
+        "subject": "The Walt Disney Company",
+        "predicate": "headquartered at",
+        "object": "Walt Disney Studios complex in Burbank, California"
+      },
+      {
+        "subject": "The Walt Disney Company",
+        "predicate": "commonly known as",
+        "object": "Disney"
+      },
+      {
+        "subject": "The Walt Disney Company",
+        "predicate": "instance of",
+        "object": "American multinational mass media and entertainment conglomerate"
+      }
+    ]
+  }
+]
