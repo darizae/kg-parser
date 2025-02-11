@@ -93,15 +93,25 @@ class KGParser:
             ))
         return results
 
-    def save_to_json(self, outputs: List[KGOutput], path: Path):
+    def save_to_json(self, outputs: List[KGOutput], path: Path, triple_format: str = 'list'):
         """
         Saves a list of KGOutput objects to a JSON file at 'path'.
         """
+        if not isinstance(path, Path):
+            path = Path(path)
+
         data = []
         for o in outputs:
+            if triple_format == 'list':
+                triples_data = [[t.subject, t.predicate, t.object] for t in o.triples]
+            elif triple_format == 'dict':
+                triples_data = [vars(t) for t in o.triples]
+            else:
+                raise ValueError(f"Unknown triple format: {triple_format}. Use 'list' or 'dict'.")
+
             data.append({
                 "id": o.id,
                 "source_text": o.source_text,
-                "triples": [vars(t) for t in o.triples]
+                "triples": triples_data
             })
         path.write_text(json.dumps(data, indent=2))

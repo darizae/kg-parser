@@ -1,0 +1,39 @@
+[
+  {
+    "id": "89fe9a23-2898-4f21-9561-e26a8534aecb",
+    "source_text": "Mount Everest is the highest mountain in the world. It's located in Nepal.",
+    "triples": [
+      [
+        "Mount Everest",
+        "is",
+        "highest mountain in the world"
+      ],
+      [
+        "Mount Everest",
+        "located in",
+        "Nepal"
+      ]
+    ]
+  },
+  {
+    "id": "b9a447db-30cb-4e12-b214-b39671c40734",
+    "source_text": "Marie Curie discovered radium and won Nobel Prizes in Physics and Chemistry.",
+    "triples": [
+      [
+        "Marie Curie",
+        "discovered",
+        "radium"
+      ],
+      [
+        "Marie Curie",
+        "won",
+        "Nobel Prizes in Physics"
+      ],
+      [
+        "Marie Curie",
+        "won",
+        "Nobel Prizes in Chemistry"
+      ]
+    ]
+  }
+]

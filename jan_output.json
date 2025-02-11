@@ -1,128 +1,118 @@
 [
   {
-    "id": "7c8545a8-62f6-4167-ab28-2a4f0fcbfe28",
+    "id": "f259ffd8-23a2-4009-9c8a-126c1c5c41d5",
     "source_text": "Paris is the capital of France. The Eiffel Tower is located in Paris.",
     "triples": [
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "headquartered at",
-        "object": "Walt Disney Studios complex in Burbank, California"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "commonly known as",
-        "object": "Disney"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "instance of",
-        "object": "American multinational mass media and entertainment conglomerate"
-      }
+      [
+        "The Walt Disney Company",
+        "headquartered at",
+        "Walt Disney Studios complex in Burbank, California"
+      ],
+      [
+        "The Walt Disney Company",
+        "commonly known as",
+        "Disney"
+      ],
+      [
+        "The Walt Disney Company",
+        "instance of",
+        "American multinational mass media and entertainment conglomerate"
+      ]
     ]
   },
   {
-    "id": "12420c6b-2cd3-4001-afa0-44282adc9fed",
+    "id": "473d48da-dc98-4f70-8c5e-40448850a4d0",
     "source_text": "Albert Einstein developed the theory of relativity. He was born in Germany.",
     "triples": [
-      {
-        "subject": "Albert Einstein",
-        "predicate": "developed the theory of relativity",
-        "object": "human"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "headquartered at",
-        "object": "Walt Disney Studios complex in Burbank, California"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "commonly known as",
-        "object": "Disney"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "instance of",
-        "object": "American multinational mass media and entertainment conglomerate"
-      }
+      [
+        "The Walt Disney Company",
+        "headquartered at",
+        "Walt Disney Studios complex in Burbank, California"
+      ],
+      [
+        "The Walt Disney Company",
+        "commonly known as",
+        "Disney"
+      ],
+      [
+        "The Walt Disney Company",
+        "instance of",
+        "American multinational mass media and entertainment conglomerate"
+      ]
     ]
   },
   {
-    "id": "e0f3e6f6-d11a-4480-80b8-b0fe64ed0c18",
+    "id": "41f5781d-6899-4512-8bdd-0c992f488f3a",
     "source_text": "Juan Arango escaped punishment from the referee for biting Jesus Zavela .\nHe could face a retrospective punishment for the incident .\nArango had earlier scored a free kick in his team's 4-3 defeat .",
     "triples": [
-      {
-        "subject": "Juan Arango",
-        "predicate": "escaped punishment from the referee for biting Jesus Zavela",
-        "object": "retrospective punishment"
-      },
-      {
-        "subject": "Arango",
-        "predicate": "had earlier scored a free kick in his team's 4-3 defeat",
-        "object": "free kick"
-      }
+      [
+        "Juan Arango",
+        "escaped punishment from the referee for biting Jesus Zavela",
+        "retrospective punishment"
+      ],
+      [
+        "Arango",
+        "had earlier scored a free kick in his team's 4-3 defeat",
+        "free kick"
+      ]
     ]
   },
   {
-    "id": "6602e40a-2736-4b37-9fe7-100c74896929",
+    "id": "74770cec-6b2d-4873-a517-f59394cc8c4d",
     "source_text": "The spread, which was shot by photographer Mario Testino, also stars\u00a0Gigi Hadid, Ansel Elgort, Dylan Penn and her younger brother Hopper .\nThis is 19-year-old Kendall's fifth time appearing in the pages of Vogue .",
     "triples": [
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "headquartered at",
-        "object": "Walt Disney Studios complex in Burbank, California"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "commonly known as",
-        "object": "Disney"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "instance of",
-        "object": "American multinational mass media and entertainment conglomerate"
-      }
+      [
+        "The Walt Disney Company",
+        "headquartered at",
+        "Walt Disney Studios complex in Burbank, California"
+      ],
+      [
+        "The Walt Disney Company",
+        "commonly known as",
+        "Disney"
+      ],
+      [
+        "The Walt Disney Company",
+        "instance of",
+        "American multinational mass media and entertainment conglomerate"
+      ]
     ]
   },
   {
-    "id": "94a11848-4c94-40fd-98ab-fc24cf64daa6",
+    "id": "5d72acd6-1a8e-4301-927b-e66a2841d0b2",
     "source_text": "The main suspect in the most brutal massacre in recent Philippine history has gone on trial.",
     "triples": [
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "headquartered at",
-        "object": "Walt Disney Studios complex in Burbank, California"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "commonly known as",
-        "object": "Disney"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "instance of",
-        "object": "American multinational mass media and entertainment conglomerate"
-      }
+      [
+        "The Walt Disney Company",
+        "headquartered at",
+        "Walt Disney Studios complex in Burbank, California"
+      ],
+      [
+        "The Walt Disney Company",
+        "commonly known as",
+        "Disney"
+      ],
+      [
+        "The Walt Disney Company",
+        "instance of",
+        "American multinational mass media and entertainment conglomerate"
+      ]
     ]
   },
   {
-    "id": "c13c2caa-1c26-4f83-b60c-42977c135370",
+    "id": "9684c6ad-4ee3-46b6-8aea-481415ad338e",
     "source_text": "Charlie's sister has passed her last university exam. Charlie and Frank will go out to celebrate that tonight.",
     "triples": [
-      {
-        "subject": "Charlie's sister",
-        "predicate": "has passed her last university exam.",
-        "object": "human"
-      },
-      {
-        "subject": "Charlie and Frank",
-        "predicate": "will go out to celebrate that tonight.",
-        "object": "human"
-      },
-      {
-        "subject": "The Walt Disney Company",
-        "predicate": "is an American multinational mass media and entertainment conglomerate that is headquartered at the Walt Disney Studios complex in Burbank, California.",
-        "object": "organization"
-      }
+      [
+        "Charlie's sister",
+        "has passed her last university exam.",
+        "university"
+      ],
+      [
+        "Charlie and Frank",
+        "will go out to celebrate that tonight.",
+        "event"
+      ]
     ]
   }
 ]

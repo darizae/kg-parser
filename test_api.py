@@ -30,9 +30,11 @@ texts = [
 # Test OpenAI API
 openai_parser = KGParser(openai_config)
 openai_results = openai_parser.parse_batch(texts)
-openai_parser.save_to_json(openai_results, Path("api_openai_output.json"))
+openai_parser.save_to_json(openai_results, Path("api_openai_output_dict.json"), "dict")
+openai_parser.save_to_json(openai_results, Path("api_openai_output_list.json"), "list")
 
 # Test Jan API
-jan_parser = KGParser(jan_config)
-jan_results = jan_parser.parse_batch(texts)
-jan_parser.save_to_json(jan_results, Path("api_jan_output.json"))
+# jan_parser = KGParser(jan_config)
+# jan_results = jan_parser.parse_batch(texts)
+# jan_parser.save_to_json(jan_results, Path("api_jan_output_list.json"), "list")
+# jan_parser.save_to_json(jan_results, Path("api_jan_output_dict.json"), "dict")

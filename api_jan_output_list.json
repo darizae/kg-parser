@@ -1,0 +1,49 @@
+[
+  {
+    "id": "a7fb13f4-e22d-4473-913e-49ee8fd2e622",
+    "source_text": "Mount Everest is the highest mountain in the world. It's located in Nepal.",
+    "triples": [
+      [
+        "Mount Everest",
+        "is the highest mountain in the world",
+        "located in"
+      ],
+      [
+        "The Walt Disney Company",
+        "headquartered at",
+        "Walt Disney Studios complex in Burbank, California"
+      ],
+      [
+        "The Walt Disney Company",
+        "commonly known as",
+        "Disney"
+      ],
+      [
+        "The Walt Disney Company",
+        "instance of",
+        "American multinational mass media and entertainment conglomerate"
+      ]
+    ]
+  },
+  {
+    "id": "fe3b7c21-1552-4714-9bff-d28050603cdc",
+    "source_text": "Marie Curie discovered radium and won Nobel Prizes in Physics and Chemistry.",
+    "triples": [
+      [
+        "The Walt Disney Company",
+        "headquartered at",
+        "Walt Disney Studios complex in Burbank, California"
+      ],
+      [
+        "The Walt Disney Company",
+        "commonly known as",
+        "Disney"
+      ],
+      [
+        "The Walt Disney Company",
+        "instance of",
+        "American multinational mass media and entertainment conglomerate"
+      ]
+    ]
+  }
+]

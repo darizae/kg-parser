@@ -65,6 +65,13 @@ def main():
         default=8,
         help="Batch size for inference."
     )
+    parser.add_argument(
+        "--triple-format",
+        type=str,
+        default="list",
+        choices=["list", "dict"],
+        help="Output format for triples. 'list' returns triples as [subject, predicate, object]. 'dict' returns triples as {{'subject': ..., 'predicate': ..., 'object': ...}}."
+    )
 
     args = parser.parse_args()
 
@@ -87,7 +94,7 @@ def main():
 
     # Save to output file:
     output_file = Path(args.output_file)
-    parser_instance.save_to_json(outputs, output_file)
+    parser_instance.save_to_json(outputs, output_file, triple_format=args.triple_format)
 
     print(f"KG results saved to {args.output_file}")
 
