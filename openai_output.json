@@ -1,0 +1,113 @@
+[
+  {
+    "id": "0fff0872-d796-461b-9e12-6a977404065b",
+    "source_text": "Paris is the capital of France. The Eiffel Tower is located in Paris.",
+    "triples": [
+      {
+        "subject": "Paris",
+        "predicate": "is the capital of",
+        "object": "France"
+      },
+      {
+        "subject": "The Eiffel Tower",
+        "predicate": "is located in",
+        "object": "Paris"
+      }
+    ]
+  },
+  {
+    "id": "3b5ca92f-bebd-4861-8ac7-da98f177a429",
+    "source_text": "Albert Einstein developed the theory of relativity. He was born in Germany.",
+    "triples": [
+      {
+        "subject": "Albert Einstein",
+        "predicate": "developed",
+        "object": "the theory of relativity"
+      },
+      {
+        "subject": "Albert Einstein",
+        "predicate": "was born in",
+        "object": "Germany"
+      }
+    ]
+  },
+  {
+    "id": "95d53dc8-72c2-43fc-9ee6-e42c3480136f",
+    "source_text": "Juan Arango escaped punishment from the referee for biting Jesus Zavela .\nHe could face a retrospective punishment for the incident .\nArango had earlier scored a free kick in his team's 4-3 defeat .",
+    "triples": [
+      {
+        "subject": "Juan Arango",
+        "predicate": "escaped punishment from",
+        "object": "the referee for biting Jesus Zavela"
+      },
+      {
+        "subject": "Juan Arango",
+        "predicate": "could face",
+        "object": "a retrospective punishment for the incident"
+      },
+      {
+        "subject": "Juan Arango",
+        "predicate": "had earlier scored",
+        "object": "a free kick in his team's 4-3 defeat"
+      }
+    ]
+  },
+  {
+    "id": "c1b69f5b-929f-45b4-bdf7-03ef159f8018",
+    "source_text": "The spread, which was shot by photographer Mario Testino, also stars\u00a0Gigi Hadid, Ansel Elgort, Dylan Penn and her younger brother Hopper .\nThis is 19-year-old Kendall's fifth time appearing in the pages of Vogue .",
+    "triples": [
+      {
+        "subject": "spread",
+        "predicate": "shot by",
+        "object": "photographer Mario Testino"
+      },
+      {
+        "subject": "spread",
+        "predicate": "stars",
+        "object": [
+          "Gigi Hadid",
+          "Ansel Elgort",
+          "Dylan Penn",
+          "Hopper"
+        ]
+      },
+      {
+        "subject": "Kendall",
+        "predicate": "appearing in",
+        "object": "Vogue"
+      },
+      {
+        "subject": "Kendall",
+        "predicate": "number of appearances",
+        "object": 5
+      }
+    ]
+  },
+  {
+    "id": "4bcd24f6-61d1-4fc3-bd4c-7be2033aa1fa",
+    "source_text": "The main suspect in the most brutal massacre in recent Philippine history has gone on trial.",
+    "triples": [
+      {
+        "subject": "main suspect",
+        "predicate": "is in trial",
+        "object": "most brutal massacre in recent Philippine history"
+      }
+    ]
+  },
+  {
+    "id": "4f91785d-b34b-4789-96fe-9f09dd4babe2",
+    "source_text": "Charlie's sister has passed her last university exam. Charlie and Frank will go out to celebrate that tonight.",
+    "triples": [
+      {
+        "subject": "Charlie's sister",
+        "predicate": "has passed",
+        "object": "her last university exam"
+      },
+      {
+        "subject": "Charlie and Frank",
+        "predicate": "will go out to celebrate",
+        "object": "that tonight"
+      }
+    ]
+  }
+]

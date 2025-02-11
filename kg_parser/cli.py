@@ -2,7 +2,7 @@ import argparse
 import json
 from pathlib import Path
 
-from .config import ModelConfig, ModelType, PathConfig
+from .config import ModelConfig, ModelType
 from .core import KGParser
 
 

@@ -84,25 +84,24 @@ class HuggingFaceKGModel(BaseKGModel):
 
 class OpenAIKGModel(BaseKGModel):
     """
-    Example OpenAI-based implementation using the ChatCompletion API
-    to produce the JSON with 'triples' array.
+    Updated OpenAI implementation using v1.0+ API
     """
     def __init__(self, config: ModelConfig):
         super().__init__(config)
-        openai.api_key = config.api_key or os.getenv("OPENAI_API_KEY")
-        if not openai.api_key:
+        self.client = openai.OpenAI(
+            api_key=config.api_key or os.getenv("OPENAI_API_KEY")
+        )
+        if not self.client.api_key:
             raise ValueError("OpenAI API key not found in config or environment variables.")
 
     def generate_kg(self, texts: List[str]) -> List[str]:
         results = []
         for batch in self.chunked(texts, self.config.batch_size):
             for text in batch:
-                # You likely have your own system or user prompt that instructs
-                # the model to output a JSON with a "triples" field:
                 prompt = f"""Parse the following text into a JSON structure with a top-level 'triples' array. 
                             Text: {text}"""
-                response = openai.ChatCompletion.create(
-                    model=self.config.model_name_or_path,  # e.g. "gpt-3.5-turbo"
+                response = self.client.chat.completions.create(
+                    model=self.config.model_name_or_path,
                     messages=[{"role": "user", "content": prompt}],
                     temperature=self.config.temperature
                 )
