@@ -1,6 +1,6 @@
 [
   {
-    "id": "0fff0872-d796-461b-9e12-6a977404065b",
+    "id": "bb884654-b6f6-4149-90d8-212179900d4d",
     "source_text": "Paris is the capital of France. The Eiffel Tower is located in Paris.",
     "triples": [
       {
@@ -9,102 +9,127 @@
         "object": "France"
       },
       {
-        "subject": "The Eiffel Tower",
+        "subject": "Eiffel Tower",
         "predicate": "is located in",
         "object": "Paris"
       }
     ]
   },
   {
-    "id": "3b5ca92f-bebd-4861-8ac7-da98f177a429",
+    "id": "968aec9a-68bd-456f-b9f9-ed05f9a15a74",
     "source_text": "Albert Einstein developed the theory of relativity. He was born in Germany.",
     "triples": [
       {
         "subject": "Albert Einstein",
         "predicate": "developed",
-        "object": "the theory of relativity"
+        "object": "theory of relativity"
       },
       {
         "subject": "Albert Einstein",
-        "predicate": "was born in",
+        "predicate": "born in",
         "object": "Germany"
       }
     ]
   },
   {
-    "id": "95d53dc8-72c2-43fc-9ee6-e42c3480136f",
+    "id": "84e7209a-2264-40d8-8bba-8b4fd5714538",
     "source_text": "Juan Arango escaped punishment from the referee for biting Jesus Zavela .\nHe could face a retrospective punishment for the incident .\nArango had earlier scored a free kick in his team's 4-3 defeat .",
     "triples": [
       {
         "subject": "Juan Arango",
         "predicate": "escaped punishment from",
-        "object": "the referee for biting Jesus Zavela"
+        "object": "referee"
+      },
+      {
+        "subject": "Juan Arango",
+        "predicate": "biting",
+        "object": "Jesus Zavela"
       },
       {
         "subject": "Juan Arango",
         "predicate": "could face",
-        "object": "a retrospective punishment for the incident"
+        "object": "retrospective punishment"
       },
       {
         "subject": "Juan Arango",
-        "predicate": "had earlier scored",
-        "object": "a free kick in his team's 4-3 defeat"
+        "predicate": "scored",
+        "object": "free kick"
+      },
+      {
+        "subject": "Juan Arango",
+        "predicate": "team's defeat",
+        "object": "4-3"
       }
     ]
   },
   {
-    "id": "c1b69f5b-929f-45b4-bdf7-03ef159f8018",
+    "id": "f43a0a9e-6aaa-4f1b-8398-0eb8437c5286",
     "source_text": "The spread, which was shot by photographer Mario Testino, also stars\u00a0Gigi Hadid, Ansel Elgort, Dylan Penn and her younger brother Hopper .\nThis is 19-year-old Kendall's fifth time appearing in the pages of Vogue .",
     "triples": [
       {
         "subject": "spread",
         "predicate": "shot by",
-        "object": "photographer Mario Testino"
+        "object": "Mario Testino"
       },
       {
         "subject": "spread",
         "predicate": "stars",
-        "object": [
-          "Gigi Hadid",
-          "Ansel Elgort",
-          "Dylan Penn",
-          "Hopper"
-        ]
+        "object": "Gigi Hadid"
+      },
+      {
+        "subject": "spread",
+        "predicate": "stars",
+        "object": "Ansel Elgort"
+      },
+      {
+        "subject": "spread",
+        "predicate": "stars",
+        "object": "Dylan Penn"
+      },
+      {
+        "subject": "Dylan Penn",
+        "predicate": "sibling",
+        "object": "Hopper"
       },
       {
         "subject": "Kendall",
-        "predicate": "appearing in",
+        "predicate": "appeared in",
         "object": "Vogue"
       },
       {
         "subject": "Kendall",
-        "predicate": "number of appearances",
-        "object": 5
+        "predicate": "appeared in",
+        "object": "fifth time"
       }
     ]
   },
   {
-    "id": "4bcd24f6-61d1-4fc3-bd4c-7be2033aa1fa",
+    "id": "e2504b59-e21b-45a4-bc53-702dd754bbe9",
     "source_text": "The main suspect in the most brutal massacre in recent Philippine history has gone on trial.",
     "triples": [
       {
-        "subject": "main suspect",
-        "predicate": "is in trial",
-        "object": "most brutal massacre in recent Philippine history"
+        "subject": "suspect",
+        "predicate": "is in trial for",
+        "object": "brutal massacre in recent Philippine history"
       }
     ]
   },
   {
-    "id": "4f91785d-b34b-4789-96fe-9f09dd4babe2",
+    "id": "285c5825-9a2c-434f-b8e6-d443df39ccb9",
     "source_text": "Charlie's sister has passed her last university exam. Charlie and Frank will go out to celebrate that tonight.",
     "triples": [
       {
         "subject": "Charlie's sister",
-        "predicate": "has passed",
+        "predicate": "passed",
         "object": "her last university exam"
       },
       {
-        "subject": "Charlie and Frank",
+        "subject": "Charlie",
+        "predicate": "will go out to celebrate",
+        "object": "that tonight"
+      },
+      {
+        "subject": "Frank",
         "predicate": "will go out to celebrate",
         "object": "that tonight"
       }
