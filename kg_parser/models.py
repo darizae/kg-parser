@@ -11,6 +11,7 @@ from transformers import (
 )
 
 from .config import ModelConfig
+from .prompt_templates import REFINED_CLAIM_PROMPT
 
 
 class BaseKGModel(ABC):
@@ -59,17 +60,19 @@ class HuggingFaceKGModel(BaseKGModel):
     def generate_kg(self, texts: List[str]) -> List[str]:
         outputs = []
         for batch in self.chunked(texts, self.config.batch_size):
-            # Build prompts (assuming you have some specific prompt):
-            # Here, we'll just pass the text directly. Adapt as needed.
+            # Build the prompt for each text in the batch
+            prompts = [REFINED_CLAIM_PROMPT.format(input=t) for t in batch]
+
+            # Tokenize the entire batch of prompts
             inputs = self.tokenizer(
-                batch,
+                prompts,
                 return_tensors="pt",
                 padding=True,
                 truncation=True,
                 max_length=self.config.max_length
             ).to(self.config.device)
 
-            # The exact generation params can vary:
+            # Generate
             gen_output = self.model.generate(
                 **inputs,
                 max_new_tokens=256,
@@ -79,6 +82,7 @@ class HuggingFaceKGModel(BaseKGModel):
 
             decoded_batch = self.tokenizer.batch_decode(gen_output, skip_special_tokens=True)
             outputs.extend(decoded_batch)
+
         return outputs
 
 
@@ -98,8 +102,7 @@ class OpenAIKGModel(BaseKGModel):
         results = []
         for batch in self.chunked(texts, self.config.batch_size):
             for text in batch:
-                prompt = f"""Parse the following text into a JSON structure with a top-level 'triples' array. 
-                            Text: {text}"""
+                prompt = REFINED_CLAIM_PROMPT.format(input=text)
                 response = self.client.chat.completions.create(
                     model=self.config.model_name_or_path,
                     messages=[{"role": "user", "content": prompt}],
@@ -124,7 +127,7 @@ class JanLocalKGModel(BaseKGModel):
         results = []
         for batch in self.chunked(texts, self.config.batch_size):
             for text in batch:
-                prompt = f"Extract the knowledge graph in JSON with a 'triples' array from this text:\n{text}"
+                prompt = REFINED_CLAIM_PROMPT.format(input=text)
                 payload = {
                     "model": self.config.model_name_or_path,
                     "messages": [{"role": "user", "content": prompt}],

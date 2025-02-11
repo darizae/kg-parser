@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass
 from typing import List
 import json
@@ -11,17 +12,20 @@ from .models import (
     JanLocalKGModel
 )
 
+
 @dataclass
 class KGTriple:
     subject: str
     predicate: str
     object: str
 
+
 @dataclass
 class KGOutput:
     id: str
     source_text: str
     triples: List[KGTriple]
+
 
 class KGParser:
     def __init__(self, model_config: ModelConfig):
@@ -49,14 +53,39 @@ class KGParser:
     def _process_outputs(self, texts: List[str], raw_outputs: List[str]) -> List[KGOutput]:
         results = []
         for text, output_str in zip(texts, raw_outputs):
+            data = None
+            # First, try to parse the output directly as JSON.
             try:
-                data = json.loads(output_str)
-                # data is expected to have "triples": [...]
-                triple_dicts = data.get("triples", [])
-                triples = [KGTriple(**td) for td in triple_dicts]
-            except (json.JSONDecodeError, TypeError, KeyError):
-                # fallback to empty if JSON is invalid
-                triples = []
+                data = json.loads(output_str.strip())
+            except json.JSONDecodeError:
+                # If direct parsing fails, try extracting JSON objects using regex.
+                json_matches = re.findall(r'\{.*?\}', output_str, re.DOTALL)
+                if json_matches:
+                    for match in json_matches:
+                        try:
+                            data = json.loads(match)
+                            break  # Stop after successfully parsing one JSON object.
+                        except json.JSONDecodeError:
+                            continue
+                if data is None:
+                    print(f"Error parsing output for text: {text}")
+                    data = {"triples": []}
+
+            triples = []
+            for triple in data.get("triples", []):
+                if isinstance(triple, list) and len(triple) == 3:
+                    triples.append(KGTriple(
+                        subject=triple[0],
+                        predicate=triple[1],
+                        object=triple[2]
+                    ))
+                elif isinstance(triple, dict):
+                    triples.append(KGTriple(
+                        subject=triple.get("subject", ""),
+                        predicate=triple.get("predicate", ""),
+                        object=triple.get("object", "")
+                    ))
+
             results.append(KGOutput(
                 id=str(uuid.uuid4()),
                 source_text=text,
