@@ -1,1 +1,1 @@
-# Knowledge Graph Paser
+# Knowledge Graph Parser
