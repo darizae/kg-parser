@@ -29,6 +29,12 @@ conda activate kg-parser
 
 ### Using Pip
 
+Install the package directly from PyPI:
+
+```bash
+pip install kg-parser
+```
+
 Install the minimal dependencies from `requirements.txt`:
 
 ```bash

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kg-parser"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python package to parse text into a knowledge graph using LLMs."
 authors = [
     { name = "Daniel Ariza", email = "danielarizae@gmail.com" }
