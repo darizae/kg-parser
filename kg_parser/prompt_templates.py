@@ -10,7 +10,7 @@ The output must be valid JSON and include nothing but the JSON object.
 ""
 ,
 "human",
-"Use the above instructions to extract a knowledge graph from the following input. Return only the JSON object without any extra text or commentary. Input: <input>{input}</input>."
+"Use the above instructions to extract a knowledge graph from the following input. Return only the JSON object without any extra text or commentary."
 ,
 "human",
 ""
@@ -62,6 +62,7 @@ Output:
   ]
 }}
 
+
 Example 4.
 Input:
 "Italy had 3.6x times more cases of coronavirus than China."
@@ -71,6 +72,9 @@ Output:
     ["Italy", "had 3.6x times more cases of coronavirus than", "China"]
   ]
 }}
+
+Now, process the following input:
+Input: <input>{input}</input>
 ""
-),
+)
 """
