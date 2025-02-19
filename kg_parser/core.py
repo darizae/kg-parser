@@ -68,8 +68,7 @@ class KGParser:
                         except json.JSONDecodeError:
                             continue
                 if data is None:
-                    print(f"Error parsing output for text: {text}")
-                    data = {"triples": []}
+                    raise ValueError(f"Error parsing output for text: {text}")
 
             triples = []
             for triple in data.get("triples", []):
