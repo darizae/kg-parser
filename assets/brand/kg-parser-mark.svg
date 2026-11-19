@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">Text to knowledge graph</title><desc id="desc">A sentence about mangroves passes through a parser and becomes connected entities in a knowledge graph.</desc>
+<defs>
+  <filter id="lift" x="-30%" y="-30%" width="170%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#173E31" flood-opacity=".07"/></filter>
+  <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" stroke="#23837D" stroke-width="2.1" fill="none" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ </defs>
+<rect width="1200" height="600" fill="#E5EFEA"/>
+<!-- plain input document -->
+<rect x="88" y="161" width="310" height="278" rx="22" fill="#FFFDF5" stroke="#A5C1B6" stroke-width="1.5" filter="url(#lift)"/>
+<path d="M121 202H364" stroke="#CBDDD3" stroke-width="2"/>
+<text x="120" y="267" fill="#173E31" font-family="Georgia,serif" font-size="32">Mangroves store</text>
+<text x="120" y="308" fill="#173E31" font-family="Georgia,serif" font-size="32">carbon in</text>
+<text x="120" y="349" fill="#173E31" font-family="Georgia,serif" font-size="32">coastal soils.</text>
+<path d="M120 382H296" stroke="#9FC9A0" stroke-width="5" stroke-linecap="round"/>
+<!-- process -->
+<path d="M415 299H467" fill="none" stroke="#23837D" stroke-width="5.5" stroke-linecap="round" marker-end="url(#arr)"/>
+<circle cx="541" cy="299" r="67" fill="#FFFDF5" stroke="#8FBEB0" stroke-width="2.5"/>
+<path d="M523 277L505 299L523 321M558 277L576 299L558 321" fill="none" stroke="#23837D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M548 270L534 327" fill="none" stroke="#315E46" stroke-width="4" stroke-linecap="round"/>
+<path d="M621 299H669" fill="none" stroke="#23837D" stroke-width="5.5" stroke-linecap="round" marker-end="url(#arr)"/>
+<!-- knowledge graph: semantic entities, not decorative nodes -->
+<path d="M901 213C959 242 1017 270 1045 320" fill="none" stroke="#23837D" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M1025 389C984 424 950 435 912 436" fill="none" stroke="#5C9448" stroke-width="4.5" stroke-linecap="round"/>
+<rect x="934" y="259" width="91" height="36" rx="18" fill="#FFFDF5" stroke="#BCD6CB" stroke-width="1"/>
+<text x="980" y="282" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#176766">stores</text>
+<rect x="945" y="402" width="40" height="33" rx="16" fill="#FFFDF5" stroke="#BCD6CB" stroke-width="1"/>
+<text x="965" y="423" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#315E46">in</text>
+<rect x="744" y="155" width="240" height="75" rx="37.5" fill="#315E46" filter="url(#lift)"/>
+<rect x="953" y="321" width="201" height="75" rx="37.5" fill="#23837D" filter="url(#lift)"/>
+<rect x="716" y="416" width="239" height="75" rx="37.5" fill="#FFFDF5" stroke="#5C9448" stroke-width="2.4" filter="url(#lift)"/>
+<text x="864" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="25" fill="#FFFDF5">Mangroves</text>
+<text x="1053" y="368" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="25" fill="#FFFDF5">Carbon</text>
+<text x="835" y="462" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="23" fill="#173E31">Coastal soils</text>
+</svg>

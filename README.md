@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/brand/kg-parser-mark.svg" width="620" alt="Text passing through kg-parser and becoming a knowledge graph">
+</p>
+
 # Knowledge Graph Parser
 
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)   
