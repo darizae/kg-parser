@@ -102,3 +102,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## Acknowledgements
 
 - The knowledge graph extraction prompt is adapted from the paper [*GraphEval: A Knowledge-Graph Based LLM Hallucination Evaluation Framework*](https://arxiv.org/abs/2407.10793). The original unmodified prompt can be found in Appendix A ("A. KG Construction Prompt").
+
+## Agent-assisted setup
+
+[Open the agent setup page](https://darizae.github.io/kg-parser/) or [copy the plain-text prompt](docs/agent-setup.txt) into your coding agent. Review its proposed changes and verification results.
